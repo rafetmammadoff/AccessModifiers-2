@@ -7,6 +7,10 @@ namespace ClassLibrary
     public class Employee
 
     {
+        public Employee(int salary)
+        {
+            Salary = salary;
+        }
         private string _name;
         private string _surname;
         private int _salary;
@@ -72,9 +76,9 @@ namespace ClassLibrary
             get => _salary; 
             set
             {
-                if (value>=250) //Burda 250 eveezine SalaryLimit istifade etmek ucun employe departmentden miras almalidir
-                {                    // Buda duzgun deyil. Isci bir bina deyilS
-                    _salary = value;
+                if (value>=250) 
+                {                 
+                    _salary = value; 
                 }
             }
         }
